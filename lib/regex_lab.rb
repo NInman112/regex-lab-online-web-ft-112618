@@ -1,9 +1,9 @@
 def starts_with_a_vowel?(word)
-
+  word.downcase.start_with?("a","e","i","o","u")
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-
+  text.split(" ").downcase.start_with?("un").end_with?("ing")
 end
 
 def words_five_letters_long(text)
